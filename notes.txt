@@ -1,0 +1,8 @@
+To test what I did:
+
+ran npm install (which is in build.sh also)
+I created a script file-generator, that duplicates the contents of the file 6mbfile.txt a 100 times (ending in a 600mb file) by running node ./file-generator.js
+a largerfile.txt is created.
+then i ran: run.sh largerfile.txt
+This preprocesses the file first, creating an index file, and after that it starts the API.
+to test it i ran: curl.exe http://localhost:3000/lines/167 for example
